@@ -1,0 +1,41 @@
+# Build and output directories
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Visual Studio Code settings
+.vscode/
+*.code-workspace
+
+# User-specific files
+*.suo
+*.user
+*.bak
+*.swp
+
+# Dependency directories
+packages/
+node_modules/
+*.nupkg
+*.nuget/
+
+# Environment and config files
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# JetBrains Rider files (if applicable)
+.idea/
+*.sln.iml
+
+# dotnet user-secrets (prevent committing secrets)
+.dotnet/user-secrets/
