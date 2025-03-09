@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ToDo.Api.Data;
+namespace ToDo.Entities.Data;
 
 public partial class TTask
 {
