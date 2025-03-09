@@ -1,1 +1,0 @@
-dotnet ef dbcontext scaffold "Server=localhost,1433;Database=ToDoDataBase;User Id=ToDoApi;Password=Parola2024;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models --no-onconfiguring -f --context AppDbContext  --use-database-names
