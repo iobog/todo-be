@@ -10,8 +10,14 @@ public class TaskProfile : Profile
 {
   public TaskProfile()
   {
-    CreateMap<TTask,GetTaskDTO>();
-    CreateMap<TTask,CreateUpdateTaskDTO>();
+    CreateMap<TTask,GetTaskDTO>()
+    .ForMember(
+      destinationMember => destinationMember.Tags,
+      memberOptions => memberOptions.MapFrom(
+      sourceMember => sourceMember.TTaskTags.Select(_ => _.Tag)
+      )
+    );
+
     CreateMap<CreateUpdateTaskDTO,TTask>();
   }
 }
